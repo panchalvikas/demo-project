@@ -1,0 +1,74 @@
+.subsctip-form {
+    margin-bottom: 0;
+    max-width: 38.43%;
+    margin: 40px auto;
+
+    .form-field {
+        display: -ms-flexbox;
+        display: flex;
+    }
+    input[type="email"] {
+        width: 100%;
+        border: 2px solid #363636;
+        border-radius: 60px 0 0 60px;
+        padding: 10px 60px;
+        font-size: 20px;
+        color: #000;
+        height: auto;
+        padding-left: 70px;
+        border-right: none;
+    }
+    input[type="submit"] {
+        height: auto;
+        border: none;
+        width: auto;
+        font-size: 20px;
+        text-transform: capitalize;
+        border-radius: 0 60px 60px 0;
+        font-weight: 400;
+        margin-left: 0;
+        border: 2px solid #ff5701;
+        padding: 11px 30px;
+    }
+}
+
+.footer-main {
+    border-top: none;
+    padding-top: 70px;
+    padding-bottom: 0;
+    background-color: #000;
+
+    .footer-info-heading{
+        font-weight: 900;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+        color: #e1e1e1;
+    }
+
+    p{
+        margin: 0 0 0px;
+        font-style: normal;
+        font-size: 14px;
+        color: #b3b3b3;
+    }
+}
+.footer-list{
+    list-style: none;
+    margin-left: 0;
+
+    li{
+        margin-bottom: 0;
+        position: relative;
+        padding-left: 0;
+
+        & + li{
+            margin-top: 12px;
+        }
+
+        a{
+            color: #b3b3b3;
+            font-size: 14px;
+        }
+    }
+}

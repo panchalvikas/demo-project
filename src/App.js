@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header';
+import Headertop from './Headertop';
+import Mainslider from './Mainslider';
+import Events from './Events';
+import Basecampreview from './Basecampreview';
+import Instafeed from './Instafeed';
+import Footer from './Footer';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+import './App.scss';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Headertop/>
+      <Header/>
+      <Mainslider/>
+      <Events/>            
+      <Basecampreview/>
+      <Instafeed/>      
+      <Footer/>
+    </div>  
   );
 }
 

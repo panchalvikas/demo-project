@@ -1,0 +1,206 @@
+
+.header-top ul{
+    padding-left: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+
+
+.carousel{
+    .slide {
+        background: transparent;
+    }
+}
+
+
+.carosuel_content {
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.carosuel-title {
+    font-size: 30px;
+    color: #fffefe;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    position: relative;
+    &:before{
+        content: '';
+        width: 66px;
+        height: 2px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        margin-right: 20px;
+    }
+    &:after{
+        content: '';
+        width: 66px;
+        height: 2px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        margin-left: 20px;
+    }
+}
+.carosuel-description{
+    font-size: 140px;
+    color: #fff;
+    margin: 0;
+    font-weight: 900;
+    line-height: 105px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.carousel-subtext{
+    margin: 0 0;
+    font-size: 40px;
+    color: #fff;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 700;
+    margin-top: 13px;
+}
+.carosuel_content{
+    .button{
+        background-color: #fff;
+        border-color: #fff;
+        color: #000;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 10px 29px;
+        margin-top: 20px;
+        display: inline-block;
+    }   
+}
+
+
+.events {
+    margin-bottom: 48px;
+
+    @include for-phone-only{
+        .row{
+            flex-direction: column;
+        }
+        
+    }
+}
+.event-part {
+    width: 33.33%;
+    @include for-phone-only{
+        
+            width: 100%;
+            margin-bottom: 10px;
+        
+    }
+    .event-inner{
+        position: relative;
+        .event-title{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        h2{
+            color: #fefefe;
+            margin-bottom: 0;
+            @include for-small-desktop {
+                font-size: 38px;
+            }
+            @include for-tablet-portrait-up {
+                font-size: 24px;
+            }
+            @include for-phone-only{
+                font-size: 30px;
+            }
+            a{
+                font-weight: 900;
+                color: #fefefe;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+.bascamp-review{
+    .row{
+        @include for-mobile-ipad{
+         flex-direction: column;
+        }
+    }
+    .bascamp-left {
+        width: 66.65%;
+        @include for-mobile-ipad{
+            width: 100%;
+        }
+    }
+    .bascamp-right {
+        width: 33.35%;
+        @include for-mobile-ipad{
+            width: 100%;
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            @include for-phone-only{
+                flex-direction: column;
+            }
+            .bascamp-right-top{
+                width: 50%;
+                margin-top: 0px;
+               
+                &:last-child{
+                    padding-left: 10px;
+                    
+                }
+                img{
+                    min-height: 107px;
+                }
+                @include for-phone-only{
+                    width: 100%;
+                    & + .bascamp-right-top{
+                        margin-top: 16px;
+                    }
+                    &:last-child{
+                        padding-left: 0px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+    .page-sub-heading{
+        margin-top: 0px;
+    }
+    .row{
+        margin-top: 30px;
+    }
+    h5{
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 13px;
+    }
+    .bascamp-right-top{
+        & + .bascamp-right-top{
+            margin-top: 26px;
+            @include for-mobile-ipad{
+                margin-top: 0px;
+            }
+        }
+    }
+}

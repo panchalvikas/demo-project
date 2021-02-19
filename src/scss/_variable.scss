@@ -1,0 +1,109 @@
+$extra-small-font:12px;
+$small-font:14px;
+$basic-font:15px;
+$medium-font:16px;
+$primary-font:20px;
+$secondary-font:24px;
+$big-font:30px;
+$extra-big-font:60px;
+
+$basic-color:#000000;
+$primary-color:#0542c9;
+$secondary-color:#333333;
+$secondary1-color:#666666;
+$white-color:#fff;
+$hover-color:#c49e62;
+
+$primary-bgcolor:#0542c9;
+$secondary-bg-color:#f2f2f2;
+$bg-color:#f9f9f9;
+
+$basic-family:'Montserrat', sans-serif;
+$primary-family:'Roboto Condensed', sans-serif;
+
+$radius:50px;
+$relative:relative;
+$absolute:absolute;
+$static:static;
+
+$light:300;
+$regular:400;
+$medium:500;
+$semi-bold:600;
+$bold:700;
+$extra-bold:700;
+$style:italic;
+
+
+@mixin flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
+@mixin align-item-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@mixin align-item-start {
+    -webkit-box-align: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+@mixin align-item-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+@mixin justify-content-center{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+@mixin justify-content-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+@mixin justify-content-space-between {
+    justify-content:space-between;
+}
+/*--- media query ---- */
+
+@mixin for-desktop {
+    @media (max-width: 1919px){ @content; }
+}
+@mixin for-small-desktop {
+    @media (max-width: 1365px){ @content; }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1100px) and (max-width: 1430px){ @content; }
+}
+@mixin for-ipad-desktop {
+    @media (max-width: 1279px) { @content; }
+}
+@mixin for-ipad-up {
+    @media (min-width: 1025px) and (max-width: 1239px) { @content; }
+}
+@mixin for-ipad-desktop-up {
+    @media (min-width: 993px) { @content; }
+}
+@mixin for-ipad-only {
+    @media (max-width: 1024px) { @content; }
+}
+@mixin for-ipad-both {
+    @media (min-width: 768px) and (max-width: 1024px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 993px) and (max-width: 1024px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 768px) and (max-width: 992px) { @content; }
+}
+@mixin for-mobile-ipad{
+    @media (max-width: 992px) { @content; }
+}
+@mixin for-phone-only {
+    @media (max-width: 767px) { @content; }
+}
